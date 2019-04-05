@@ -1,0 +1,184 @@
+* {
+	box-sizing: border-box;
+}
+
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	position: relative;
+	font-family: 'Raleway', sans-serif;
+/*	background-image: url('photos/faded.png');
+	background-repeat: repeat;
+	background-size: auto;*/
+	height: 100px;
+	background-position: center;
+
+}
+
+/*navbar edits overriding bootstrap styles*/
+
+.navbar .navbar-nav .nav-item .nav-link{
+	color: #3E2286;
+	text-align: center;
+}
+
+.navbar .navbar-brand {
+	color: #3E2286;
+	margin-right: 0;
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 3.5rem;
+	background-image: url('blue.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100px;
+	background-position: center;
+}
+
+.navbar  {
+	display: block;
+	text-align: center;
+}
+.navbar .navbar-nav {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.navbar .navbar-toggler {
+	margin-left: 1rem;
+	border-color: #3E2286;
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon{
+	 background: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(62,34,134, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar button {
+    float: right;
+}
+
+.dropdown-item {
+	color: #3E2286;
+}
+
+h4 a:hover, a.dropdown-item:hover, .navbar .navbar-nav .nav-link:hover, .navbar .navbar-brand:hover, .navbar .navbar-nav .active > .nav-link{
+	color: rgba(62,34,134,.5);
+	text-decoration: none;
+}
+
+
+/*body*/
+.body { /*main container inlcude container and footer*/
+	position: relative;
+	min-height: 100vh;
+	padding-bottom: 75px;
+	overflow: hidden;
+	display: block;
+	background-color: white;
+	margin-left: 15%;
+	margin-right: 15%;
+
+}
+
+/*.body .container .row {
+	color: #2A463E;
+
+}*/
+
+/*.container { just includes the main content of the page
+	padding-bottom: 15px;
+}*/
+/*regular photo on small to medium screen*/
+@media only screen and (max-width: 991px){
+	.circle {
+		width: 100%;
+	}
+}
+
+/*photo turns into a circle on a larger screen*/
+@media only screen and (min-width: 992px){
+	.circle {
+		width: 75%;
+		border-radius: 50%;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+}
+
+@media only screen and (max-width: 523px){
+	.navbar .navbar-brand {
+		font-size: 1.5rem;
+		background-image: none;
+	}
+	}
+}
+
+.about {
+	font-size: .75rem;
+}
+
+
+/*footer*/
+.footer {
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	}
+
+hr
+
+{
+	width: 75%;
+}
+
+i {
+	color: #3E2286;
+	font-size: 1.5rem;
+	padding: 5px;
+}
+
+a i.hover {
+	color: rgba(62,34,134,.5);
+}
+.copyright {
+	color: #3E2286;
+	font-size: .75rem;
+}
+
+/*resume page*/
+
+.header {
+	background-color: #E480F9;
+	box-shadow: 8px 8px;
+
+
+}
+.logo {
+	width: 150px;
+}
+
+.pageTitle {
+	margin-left: 15px;
+}
+
+@media only screen and (max-width: 767px){
+	 h4 {
+	 	background-color: rgba(6,191,193,.5);
+	 	padding: 5px;
+	 }
+}
+
+h4 a {
+	color: #3E2286;
+}
+
+@media only screen and (min-width: 768px){
+	 .logo{
+	 	margin-left: -50px;
+	 }
+}
+
+
